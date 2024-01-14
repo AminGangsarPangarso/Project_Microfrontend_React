@@ -16,7 +16,10 @@ const devConfig ={
         new ModuleFederationPlugin({
             name:'container',
             remotes:{
-                sidebar: 'sidebar@http://localhost:4002/remoteEntry.js'
+                sidebar: 'sidebar@http://localhost:4002/remoteEntry.js',
+                navbar: 'navbar@http://localhost:4001/remoteEntry.js',
+                footer: 'footer@http://localhost:4003/remoteEntry.js',
+                product: 'product@http://localhost:4007/remoteEntry.js',
             },
           
         })
